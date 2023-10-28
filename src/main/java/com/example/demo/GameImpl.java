@@ -40,16 +40,15 @@ public class GameImpl implements Game {
     // Other Methods
     public static Game createGame() {
         Scanner myObj = new Scanner(System.in);
-        GameStage.
-        println("Welcome to Sons of Arnor, a choose your own adventure game. What is your name?");
+        GameStage.println("Welcome to Sons of Arnor, a choose your own adventure game. What is your name?");
         String name = myObj.nextLine();
-        println("Hello " + name + "! In Sons of Arnor, each player will have 3 different stats: Strength, Health, " +
+        GameStage.println("Hello " + name + "! In Sons of Arnor, each player will have 3 different stats: Strength, Health, " +
                 "and Mana.");
-        System.out.println("How much Strength would you like: 1-10");
+        GameStage.println("How much Strength would you like: 1-10");
         int strength = myObj.nextInt();
-        System.out.println("How much Health would you like: 1-10");
+        GameStage.println("How much Health would you like: 1-10");
         int health = myObj.nextInt();
-        System.out.println("How much Mana would you like: 1-10");
+        GameStage.println("How much Mana would you like: 1-10");
         int mana = myObj.nextInt();
 
         PlayerSheet playerSheet = new PlayerSheetImpl(strength, health, mana, new ArrayList<>());
