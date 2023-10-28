@@ -1,5 +1,8 @@
 package Game.Map.Event;
 
+import Game.Player.Inventory.Item.Item;
+import Game.Player.Inventory.Item.NonEquippableImpl;
+
 import java.util.Scanner;
 
 public class EventImpl {
@@ -24,6 +27,7 @@ public class EventImpl {
             if (myObj.nextLine().equals("Yes") || myObj.nextLine().equals("yes")) {
                 System.out.println("Inside of the chest is a diamond, do you want to take it?");
                 if (myObj.nextLine().equals("Yes") || myObj.nextLine().equals("yes")) {
+                    Item diamond = new NonEquippableImpl(400, "diamond", "A very large blue diamond.", 5);
 
                 }
 
