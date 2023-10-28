@@ -50,7 +50,7 @@ public class GameStage extends Stage {
     private void initGame() {
         println("Welcome to --Sons of Arnor 3-- PROTOTYPE");
         initCommands();
-        GameImpl.createGame();
+        GameImpl.createGame(input);
     }
 
     private void initCommands() {
