@@ -32,4 +32,10 @@ public class InventoryImpl implements Inventory {
     public void setEncumbrance(long encumbrance) {
         _encumbrance = encumbrance;
     }
+
+    // Other Methods
+
+    public void addItem(Item item) {
+        getItems().add(item);
+    }
 }
