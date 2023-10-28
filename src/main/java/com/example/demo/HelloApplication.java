@@ -31,7 +31,8 @@ public class HelloApplication extends Application {
 //        stage.setScene(scene);
 //        stage.show();
 
-        new StartStage();
+        // new StartStage();
+        new GameStage();
     }
 
     public void game(Stage stage) throws IOException {
