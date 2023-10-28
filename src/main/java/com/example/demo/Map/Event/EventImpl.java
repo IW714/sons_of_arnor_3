@@ -1,7 +1,6 @@
 package com.example.demo.Map.Event;
 
-import Game.Player.Inventory.Item.Item;
-import Game.Player.Inventory.Item.NonEquippableImpl;
+import com.example.demo.Player.Inventory.Item.NonEquippable.NonEquippableImpl;
 
 import java.util.Scanner;
 

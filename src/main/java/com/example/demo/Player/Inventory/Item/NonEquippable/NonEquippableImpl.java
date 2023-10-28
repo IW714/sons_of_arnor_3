@@ -1,7 +1,7 @@
-package Game.Player.Inventory.Item;
+package com.example.demo.Player.Inventory.Item.NonEquippable;
 
-import Game.Player.Inventory.Item.ItemImpl;
-import Game.Player.Inventory.Item.ItemType;
+import com.example.demo.Player.Inventory.Item.ItemImpl;
+import com.example.demo.Player.Inventory.Item.ItemType;
 
 public class NonEquippableImpl extends ItemImpl {
 
