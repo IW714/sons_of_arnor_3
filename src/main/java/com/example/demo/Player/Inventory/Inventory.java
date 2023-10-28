@@ -9,4 +9,6 @@ public interface Inventory {
     List<Item> getItems();
 
     long getEncumbrance();
+
+    void addItem(Item item);
 }
