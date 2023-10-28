@@ -2,5 +2,5 @@ package Game.Map;
 
 public interface Map {
 
-    public Events getEvents();
+    public Cell getCell();
 }
