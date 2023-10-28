@@ -1,4 +1,4 @@
-package Game;
+package com.example.demo;
 
 public enum Direction {
     NORTH,
