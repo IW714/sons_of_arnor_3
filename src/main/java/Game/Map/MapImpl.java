@@ -14,4 +14,9 @@ public class MapImpl implements Map {
     public Cell getCell() {
         return _cell;
     }
+
+    public Cell[] createMap(int length) {
+        Cell[] cellArr = new Cell[length * length];
+        return cellArr;
+    }
 }
