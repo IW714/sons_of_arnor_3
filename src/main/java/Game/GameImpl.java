@@ -30,4 +30,7 @@ public class GameImpl implements Game {
     public GameManager getGM() {
         return _GM;
     }
+
+    // Other Methods
+
 }
