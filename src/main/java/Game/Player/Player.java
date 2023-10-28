@@ -8,4 +8,6 @@ public interface Player {
 
     PlayerSheet getPS();
 
+    String getName();
+
 }

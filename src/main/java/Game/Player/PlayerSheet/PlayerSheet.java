@@ -6,4 +6,10 @@ import java.util.List;
 public interface PlayerSheet {
 
     List<EquippableImpl> getEquipped();
+
+    int getHealth();
+
+    int getStrength();
+
+    int getMana();
 }

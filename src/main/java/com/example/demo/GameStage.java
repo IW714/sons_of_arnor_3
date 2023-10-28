@@ -3,6 +3,7 @@ package com.example.demo;
 import javafx.application.Platform;
 import javafx.geometry.Insets;
 import javafx.scene.Parent;
+import Game.*;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
@@ -14,6 +15,8 @@ import javafx.stage.Stage;
 
 import java.util.HashMap;
 import java.util.Map;
+
+import static Game.GameImpl.createGame;
 
 public class GameStage extends Stage {
     Label x = new Label("Game");
@@ -70,5 +73,7 @@ public class GameStage extends Stage {
 //        this.show();
         this.setScene(new Scene(createContent()));
         this.show();
+        Game game = createGame();
+
     }
 }
