@@ -1,10 +1,12 @@
-package com.example.demo.Map.Event;
+package com.example.demo.Map.Cell;
 
-import Game.Map.Event.EventImpl;
+import com.example.demo.Map.Event.EventImpl;
+import com.example.demo.Map.Event.EventType;
+
 import java.util.Random;
-import Game.Map.Event.EventType;
 
-import static Game.Map.Event.EventType.*;
+import static com.example.demo.Map.Event.EventType.*;
+
 
 public class CellImpl implements Cell {
     private EventImpl _events;

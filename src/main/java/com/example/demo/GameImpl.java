@@ -40,56 +40,17 @@ public class GameImpl implements Game {
     // Other Methods
     public static Game createGame() {
         Scanner myObj = new Scanner(System.in);
-//        GameStage
-        System.out.println("Welcome to Sons of Arnor, a choose your own adventure game. What is your name?");
+        GameStage.
+        println("Welcome to Sons of Arnor, a choose your own adventure game. What is your name?");
         String name = myObj.nextLine();
-        System.out.println("Hello " + name + "! In Sons of Arnor, each player will have 3 different stats: Strength, Health, " +
+        println("Hello " + name + "! In Sons of Arnor, each player will have 3 different stats: Strength, Health, " +
                 "and Mana.");
-
-        int totalAttributes = 0;
-        boolean valid = true;
-        int strength = 0;
-        int mana = 0;
-        int health = 0;
-
-        System.out.println("How much Strength would you like: 1-10(You only get 15 attributes total)");
-        while(valid){
-            strength = myObj.nextInt();
-            if(strength < 1 || strength > 10) {
-                System.out.println("Please set Strength between 1 and 10");
-            }
-            else {
-                valid = false;
-            }
-        }
-        valid = true;
-        totalAttributes += strength;
-
-        System.out.println("How much Health would you like: 1-10(You only get 15 attributes total)");
-        while(valid) {
-            health = myObj.nextInt();
-            if(health < 1 || health > 10) {
-                System.out.println("Please set Health between 1 and 10");
-            }
-            if(health + totalAttributes > 15) {
-                System.out.println("You have assigned too many attributes");
-            }
-        }
-        valid = true;
-        totalAttributes += health;
-
-        System.out.println("How much Mana would you like: 1-10(You only get 15 attributes total)");
-        while(valid) {
-            mana = myObj.nextInt();
-            if(mana < 1 || mana > 10) {
-                System.out.println("Please set Mana between 1 and 10");
-            }
-            if(mana + totalAttributes > 15) {
-                System.out.println("You have assigned too many attributes");
-            }
-        }
-        valid = true;
-        totalAttributes += mana;
+        System.out.println("How much Strength would you like: 1-10");
+        int strength = myObj.nextInt();
+        System.out.println("How much Health would you like: 1-10");
+        int health = myObj.nextInt();
+        System.out.println("How much Mana would you like: 1-10");
+        int mana = myObj.nextInt();
 
         PlayerSheet playerSheet = new PlayerSheetImpl(strength, health, mana, new ArrayList<>());
         Inventory inventory = new InventoryImpl(new ArrayList<>(), 0);

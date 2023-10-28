@@ -1,6 +1,9 @@
 package com.example.demo.Map;
 
-public class MapImpl implements Map {
+import com.example.demo.Map.Cell.Cell;
+import com.example.demo.Map.Cell.CellImpl;
+
+public class MapImpl {
     private Cell _cell;
 
     public MapImpl(CellImpl cell) {
