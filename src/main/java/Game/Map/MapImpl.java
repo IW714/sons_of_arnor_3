@@ -3,7 +3,7 @@ package Game.Map;
 public class MapImpl implements Map {
     private Cell _cell;
 
-    public MapImpl(CellImpl cell) {
+    public MapImpl(Cell cell) {
         _cell = cell;
     }
 
@@ -14,4 +14,5 @@ public class MapImpl implements Map {
     public Cell getCell() {
         return _cell;
     }
+
 }
