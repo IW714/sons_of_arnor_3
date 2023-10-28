@@ -1,6 +1,7 @@
 package com.example.demo.GUI;
 
 import com.example.demo.Game;
+import com.example.demo.GameImpl;
 import javafx.application.Platform;
 import javafx.geometry.Insets;
 import javafx.scene.Parent;
@@ -15,13 +16,11 @@ import javafx.stage.Stage;
 import java.util.HashMap;
 import java.util.Map;
 
-import static com.example.demo.GameImpl.createGame;
-
 public class GameStage extends Stage {
     Label x = new Label("Game");
     VBox y = new VBox();
 
-    private TextArea output = new TextArea();
+    private static TextArea output = new TextArea();
     private TextField input = new TextField();
     private Map<String, Command> commands = new HashMap<>();
     private Game game;
@@ -51,7 +50,7 @@ public class GameStage extends Stage {
     private void initGame() {
         println("Welcome to --Sons of Arnor 3-- PROTOTYPE");
         initCommands();
-        game = createGame();
+        GameImpl.createGame();
     }
 
     private void initCommands() {
@@ -65,7 +64,7 @@ public class GameStage extends Stage {
 
     }
 
-    public void println(String line) {
+    public static void println(String line) {
         output.appendText(line + "\n");
     }
 
