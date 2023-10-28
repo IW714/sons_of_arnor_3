@@ -7,11 +7,11 @@ public class CellImpl implements Cell {
         _events = events;
     }
 
+
     // Getters
+
 
     public EventImpl getEvents() {
         return _events;
     }
-
-    // Create random event
 }

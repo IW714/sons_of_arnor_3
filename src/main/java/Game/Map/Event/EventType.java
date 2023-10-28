@@ -1,4 +1,4 @@
-package Game.Map;
+package Game.Map.Event;
 
 public enum EventType {
     NEWITEM,
