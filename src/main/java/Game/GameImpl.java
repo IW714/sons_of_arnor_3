@@ -1,12 +1,9 @@
 package Game;
 
-import Game.Manager.*;
 import Game.Map.*;
 import Game.Player.*;
 import Game.Player.Inventory.Inventory;
 import Game.Player.Inventory.InventoryImpl;
-import Game.Player.Inventory.Item.Equippable.EquippableImpl;
-import Game.Player.Inventory.Item.Item;
 import Game.Player.PlayerSheet.PlayerSheet;
 import Game.Player.PlayerSheet.PlayerSheetImpl;
 
@@ -16,13 +13,6 @@ import java.util.Scanner;
 public class GameImpl implements Game {
     private Map _map;
     private Player _player;
-    private GameManager _GM;
-
-    public GameImpl(Map map, Player player, GameManager GM) {
-        _map = map;
-        _player = player;
-        _GM = GM;
-    }
 
     public GameImpl(Map map, Player player) {
         _map = map;
@@ -43,10 +33,6 @@ public class GameImpl implements Game {
 
     public Player getPlayer() {
         return _player;
-    }
-
-    public GameManager getGM() {
-        return _GM;
     }
 
     // Other Methods

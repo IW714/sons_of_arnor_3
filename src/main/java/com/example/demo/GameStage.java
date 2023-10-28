@@ -13,10 +13,10 @@ public class GameStage extends Stage {
     VBox y = new VBox();
 
     GameStage(){
-        Game game = createGame();
         y.getChildren().add(x);
         this.setScene(new Scene(y, 600, 400));
         this.show();
+        Game game = createGame();
 
     }
 }
