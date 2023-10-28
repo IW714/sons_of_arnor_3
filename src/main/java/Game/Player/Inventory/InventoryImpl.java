@@ -1,14 +1,15 @@
 package Game.Player.Inventory;
 
 import Game.Player.Inventory.Item.Item;
-import Game.Player.Inventory.Item.ItemImpl;
+
+import java.util.List;
 
 
 public class InventoryImpl implements Inventory {
-    private Item[] _items;
+    private List<Item> _items;
     private long _encumbrance;
 
-    public InventoryImpl(ItemImpl[] items, long encumbrance) {
+    public InventoryImpl(List<Item> items, long encumbrance) {
         _items = items;
         _encumbrance = encumbrance;
     }
@@ -16,7 +17,7 @@ public class InventoryImpl implements Inventory {
 
     // Getters
 
-    public Item[] getItems() {
+    public List<Item> getItems() {
         return _items;
     }
 

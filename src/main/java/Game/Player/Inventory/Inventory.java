@@ -2,9 +2,11 @@ package Game.Player.Inventory;
 
 import Game.Player.Inventory.Item.Item;
 
+import java.util.List;
+
 public interface Inventory {
 
-    Item[] getItems();
+    List<Item> getItems();
 
     long getEncumbrance();
 }

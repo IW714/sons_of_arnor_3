@@ -1,21 +1,17 @@
 package Game.Player;
 
-import Game.GameImpl;
 import Game.Player.Inventory.*;
 import Game.Player.PlayerSheet.*;
-import Game.Player.RelationshipSheet.*;
-
-import java.security.cert.CRLSelector;
 
 public class PlayerImpl implements Player {
     private Inventory _inventory;
-    private RelationSheet _RS;
     private PlayerSheet _PS;
+    private String _name;
 
-    public PlayerImpl(InventoryImpl inventory, RelationSheetImpl RS, PlayerSheetImpl PS) {
+    public PlayerImpl(Inventory inventory, PlayerSheet PS, String name) {
         _inventory = inventory;
-        _RS = RS;
         _PS = PS;
+        _name = name;
     }
 
 
@@ -25,11 +21,11 @@ public class PlayerImpl implements Player {
         return _inventory;
     }
 
-    public RelationSheet getRS() {
-        return _RS;
-    }
-
     public PlayerSheet getPS() {
         return _PS;
+    }
+
+    public String getName() {
+        return _name;
     }
 }
