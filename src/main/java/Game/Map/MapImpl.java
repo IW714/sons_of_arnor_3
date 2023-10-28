@@ -1,10 +1,9 @@
 package Game.Map;
 
 public class MapImpl implements Map {
-    private Regions _regions;
     private Events _events;
 
-    public MapImpl(RegionsImpl regions, EventsImpl events) {
+    public MapImpl(EventsImpl events) {
         _regions = regions;
         _events = events;
     }
