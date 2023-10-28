@@ -40,7 +40,7 @@ public class GameImpl implements Game {
     // Other Methods
     public static Game createGame() {
         Scanner myObj = new Scanner(System.in);
-        GameStage.
+//        GameStage.
         println("Welcome to Sons of Arnor, a choose your own adventure game. What is your name?");
         String name = myObj.nextLine();
         println("Hello " + name + "! In Sons of Arnor, each player will have 3 different stats: Strength, Health, " +
