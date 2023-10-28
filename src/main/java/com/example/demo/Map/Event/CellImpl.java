@@ -1,4 +1,4 @@
-package Game.Map;
+package com.example.demo.Map.Event;
 
 import Game.Map.Event.EventImpl;
 import java.util.Random;

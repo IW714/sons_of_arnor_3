@@ -1,4 +1,4 @@
-package Game.Map;
+package com.example.demo.Map.Event;
 
 public interface Map {
 
