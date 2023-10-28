@@ -11,8 +11,8 @@ public class ConsumableImpl extends ItemImpl {
     private final Effect _effect;
 
 
-    public ConsumableImpl(EffectImpl effect, long value, String name, String description) {
-        super(value, name, description);
+    public ConsumableImpl(EffectImpl effect, long value, String name, String description, int encumbrance) {
+        super(value, name, description, encumbrance);
         _effect = effect;
     }
 

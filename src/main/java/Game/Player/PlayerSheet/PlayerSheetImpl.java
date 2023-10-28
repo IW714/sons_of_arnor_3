@@ -1,15 +1,20 @@
 package Game.Player.PlayerSheet;
 
+import Game.Player.Inventory.Item.Equippable.EquippableImpl;
 import Game.Player.PlayerImpl;
 
-public class PlayerSheetImpl implements PlayerSheet {
-    private PlayerStats _stats;
-    private PlayerConditions _conditions;
-    private Equipped _equipped;
+import java.util.List;
 
-    public PlayerSheetImpl(PlayerStatsImpl stats, PlayerConditionsImpl conditions, EquippedImpl equipped) {
-        _stats = stats;
-        _conditions = conditions;
+public class PlayerSheetImpl implements PlayerSheet {
+    private int _mana;
+    private int _strength;
+    private int _health;
+    private List<EquippableImpl> _equipped;
+
+    public PlayerSheetImpl(List<EquippableImpl> equipped, int health, int strength, int mana) {
+        _health = health;
+        _strength = strength;
+        _mana = mana;
         _equipped = equipped;
     }
 
@@ -17,15 +22,36 @@ public class PlayerSheetImpl implements PlayerSheet {
     // Getters
 
 
-    public PlayerStats getStats() {
-        return _stats;
+    public int getHealth() {
+        return _health;
     }
 
-    public PlayerConditions getConditions() {
-        return _conditions;
+    public int getStrength() {
+        return _strength;
     }
 
-    public Equipped getEquipped() {
+    public int getMana() {
+        return _mana;
+    }
+
+    public List<EquippableImpl> getEquipped() {
         return _equipped;
+    }
+
+    // Setters
+
+    public void changeHealth(int health) {
+        _health += health;
+    }
+
+    public void changeStrength(int strength) {
+        _strength += strength;
+    }
+
+    public void changeMana(int mana) {
+        _mana += mana;
+    }
+
+    public void addEquippable(EquippableImpl equippable) {
     }
 }

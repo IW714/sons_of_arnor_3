@@ -1,23 +1,8 @@
 package Game.Manager;
 
 public class GameManagerImpl implements GameManager {
-    private long _GPM;
-    private PlayerActivity _PA;
-
-    public GameManagerImpl(PlayerActivity PA) {
-        _PA = PA;
-    }
-
-
-    // Getters
-
-
+    @Override
     public long getGPM() {
-        return _GPM;
+        return 0;
     }
-
-    public PlayerActivity getPA() {
-        return _PA;
-    }
-
 }
